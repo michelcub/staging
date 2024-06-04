@@ -122,7 +122,7 @@ class Ventana(QWidget):
 
 def descargar_kraken_zip():
     if DEBUG:
-        url = 'https://unlogic.io/static/kraken/kraken_win_64.zip'
+        url = 'https://github.com/michelcub/staging/raw/main/kraken_win_64.zip'
     else:
         url = 'https://unlogic.io/static/kraken/kraken_win_64.zip'
 
