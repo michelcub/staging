@@ -105,15 +105,15 @@ class Ventana(QWidget):
         pwd = os.getcwd().replace('\\', '/')
         try:
             root = os.getcwd()
-            update_dependencies = os.path.join(f'{root}', 'kraken', 'update_dependences.bat')
+            update_dependencies = os.path.join(f'{root}', 'update_dependences.bat')
             os.startfile(update_dependencies)
             print('Actualizando dependencias')
         except:
             print('Error al intentar actualizar dependencias')
             pass
-        command = os.path.join(f'{pwd}', 'Run_Kraken.lnk')
+        command = os.path.join(f'{os.path.dirname(pwd)}', 'Run_Kraken.lnk')
         os.startfile(command)
-        command = os.path.join(f'{pwd}', 'Kraken_Manager.lnk')
+        command = os.path.join(f'{os.path.dirname(pwd)}', 'Kraken_Manager.lnk')
         os.startfile(command)
 
         # Cerrar aplicación
