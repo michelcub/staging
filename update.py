@@ -48,7 +48,7 @@ class Ventana(QWidget):
     def __init__(self):
         super().__init__()
         root = os.getcwd()
-        path_to_ui = os.path.join(f'{root}', 'kraken', 'src', 'ui', 'update_ui.ui').replace('\\', '/')
+        path_to_ui = os.path.join(f'{root}', 'src', 'ui', 'update_ui.ui').replace('\\', '/')
         uic.loadUi(path_to_ui, self)
 
         self.path_to_image = os.path.join('src', 'ui', 'images', 'Kraken_icon.ico')
