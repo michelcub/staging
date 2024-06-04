@@ -12,7 +12,7 @@ from PyQt5.QtCore import Qt, QThread, pyqtSignal, QProcess
 from PyQt5 import uic
 from PyQt5.QtGui import QPixmap
 
-from kraken.src.pipelinepro.settings import DEBUG
+from src.pipelinepro.settings import DEBUG
 
 class Progreso_Update(QThread):
     def __init__(self, ventana):
